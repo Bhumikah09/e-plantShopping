@@ -3,7 +3,7 @@ import Landing from "./pages/Landing";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Header from "./components/Header";
-
+import "./App.css";
 function App() {
   return (
     <BrowserRouter>
