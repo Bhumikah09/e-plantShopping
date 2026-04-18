@@ -1,10 +1,14 @@
 export default function AboutUs() {
   return (
-    <div>
-      <h2>About GreenLeaf</h2>
+    <div className="about-us-container">
+      <h2>Welcome to Paradise Nursery</h2>
+
       <p>
-        GreenLeaf is a plant store dedicated to providing beautiful and healthy
-        houseplants to customers. We aim to bring nature closer to your home.
+        Paradise Nursery is your destination for beautiful indoor and outdoor plants.
+      </p>
+
+      <p>
+        Our mission is to bring greenery into every home and promote a healthier lifestyle.
       </p>
     </div>
   );
