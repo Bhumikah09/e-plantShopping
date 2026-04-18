@@ -1,14 +1,27 @@
+import { useState } from "react";
+import ProductList from "./pages/ProductList";
 import "./App.css";
-import { Link } from "react-router-dom";
 
 function App() {
+  const [showProductList, setShowProductList] = useState(false);
+
+  const handleGetStartedClick = () => {
+    setShowProductList(true);
+  };
+
   return (
     <div className="background-image">
-      <h1>Welcome to Paradise Nursery</h1>
+      {!showProductList ? (
+        <div>
+          <h1>Welcome to Paradise Nursery</h1>
 
-      <Link to="/products">
-        <button>Get Started</button>
-      </Link>
+          <button onClick={handleGetStartedClick}>
+            Get Started
+          </button>
+        </div>
+      ) : (
+        <ProductList />
+      )}
     </div>
   );
 }
